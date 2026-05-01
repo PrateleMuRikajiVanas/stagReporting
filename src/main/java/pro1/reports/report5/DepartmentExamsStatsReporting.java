@@ -16,7 +16,7 @@ public class DepartmentExamsStatsReporting {
         ExamsList list = new Gson().fromJson(json, ExamsList.class);
 
         int count = 0;
-        Set<String> rooms = new TreeSet<>(); // TreeSet automaticky řadí abecedně a zahazuje duplicity
+        Set<String> rooms = new TreeSet<>();
 
         if (list != null && list.termin != null) {
             for (Exam e : list.termin) {
