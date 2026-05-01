@@ -8,4 +8,5 @@ public class TeacherCoursesList
 {
     @SerializedName("predmetUcitele")
     public List<TeacherCourse> items;
+
 }

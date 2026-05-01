@@ -11,9 +11,9 @@ public class TestDataSource implements DataSource {
     }
 
     @Override
-    public String getPredmetyByUcitel(String rok, int ucitIdno, String katedra) {
+    public String getPredmetyByUcitel(String rok, int ucitelId, String katedra) {
         return ResourcesUtils.readResourceFile(
-                String.format("testData/getPredmetyByUcitel_%s_%s_%s.json",rok,ucitIdno,katedra));
+                String.format("testData/getPredmetyByUcitel_%s_%s_%s.json",rok,ucitelId,katedra));
 
     }
 
